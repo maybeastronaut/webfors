@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>首页</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<style>
+		#counter {
+			width: 1150px;
+			height: 600px;
+			position: relative;
+			overflow: hidden;
+		}
+
+		#list {
+			width: 3600px;
+			height: 500px;
+			position: absolute;
+			z-index: 1;
+		}
+
+		#list img {
+			margin-top: 50px;
+			width: 1150px;
+			height: 600px;
+			float: left;
+		}
+
+		.arrow {
+			position: absolute;
+			top: 50%;
+			text-decoration: none;
+			z-index: 2;
+			display: none;
+			width: 40px;
+			height: 40px;
+			font-size: 36px;
+			font-weight: bold;
+			line-height: 39px;
+			text-align: center;
+			color: #fff;
+			background-color: rgba(0, 0, 0, 1);
+			cursor: pointer;
+		}
+
+		.arrow:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		#counter:hover .arrow {
+			display: block;
+		}
+
+		#pre {
+			left: 20px;
+		}
+
+		#next {
+			right: 20px;
+		}
+
+		#list {
+			transition: left 1s;
+		}
+
+		.list {
+			transition: left 0.1s;
+		}
+
+		#buttons {
+			position: absolute;
+			height: 10px;
+			width: 120px;
+			left: 250px;
+			bottom: 20px;
+			z-index: 2;
+		}
+
+		#buttons span {
+			border: 1px solid #FFFFFF;
+			border-radius: 5px;
+			float: left;
+			width: 10px;
+			height: 10px;
+			background-color: #333;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+
+		#buttons .on {
+			background: orangered;
+		}
+	</style>
+
+</head>
+
+<body class="page1">
+	<!--==============================header===============================-->
+	<header>
+		<div class="container_12">
+
+			<div class="menu_block">
+				<nav class="">
+					<ul class="sf-menu">
+						<h1>
+							<a href="./index.html">
+								<img src="./images/logo.jpg" alt="logo图片">
+							</a>
+						</h1>
+						<li><a style="color: #263555;" href="index.html">首页</a></li>
+						<li><a href="about.html">关于</a></li>
+						<li><a href="delicacies.html">论坛</a></li>
+						<li><a href="">我们</a></li>
+					</ul>
+				</nav>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</header>
+
+	<div class="main">
+		<!--=======content================================-->
+
+		<div class="content">
+			<div class="container_12">
+				<div class="container_12">
+					<div id="counter">
+						<div id="list" style="left:0px;">
+							<!-- 设置初始偏移量为0px -->
+							<img src="images/un1.png" alt="1">
+							<img src="images/un2.png" alt="2">
+							<img src="images/un3.png" alt="3">
+							<img src="images/slide2.jpg" alt="2">
+							<img src="images/slide3.jpg" alt="3">
+							<img src="images/slide3.jpg" alt="3">
+						</div>
+						<!-- 图片两边的左右点击切换图片按钮 -->
+						<a href="javascript:;" id="pre" class="arrow">&lt;</a>
+						<a href="javascript:;" id="next" class="arrow">&gt;</a>
+					</div>
+				</div>
+				<div class="grid_12">
+					<h3>产品系列</h3>
+				</div>
+				<div class="boxes">
+					<!-- 跳转的地址回头改一下 -->
+					<a href="./about.html">
+						<div class="grid_4">
+							<figure>
+								<div><img src="images/slide1(1).png" alt="" style="height: 350px;"></div>
+								<figcaption>
+									<h3>浅水岛屿</h3>
+									海风轻拂，蓝天白云映照着那片浩渺无垠的海洋。在这片广袤的水域中，孤立而独特的岛屿傲然屹立。它们就像大自然的珍宝，被蓝色的海水环抱，彷佛是大海恩赐给人类的礼物。
+								</figcaption>
+							</figure>
+						</div>
+					</a>
+					<!-- 跳转的地址回头改一下 -->
+					<a href="./about.html">
+						<div class="grid_4">
+							<figure>
+								<div><img src="images/in01.png" alt="" style="height: 350px;"></div>
+								<figcaption>
+									<h3>群山之巅</h3>
+									高耸入云的群山，仿佛是大地与天空之间的壮丽桥梁。它们雄伟而峻峭，山脉起伏如巨龙蜿蜒，将大地分割成一片片神秘而壮丽的景色。
+
+								</figcaption>
+							</figure>
+						</div>
+					</a>
+					<!-- 跳转的地址回头改一下 -->
+					<a href="./about.html">
+						<div class="grid_4">
+							<figure>
+								<div><img src="images/in03(1).png" alt="" style="height: 350px;"></div>
+								<figcaption>
+									<h3>灯塔岛屿</h3>
+									那如画的地方，迷人的景色常让人心醉。当黄昏染红天际，最后一缕余晖洒在岛上，将其笼罩在温暖的光芒中。夜晚降临时，岛上的灯塔开始闪烁，犹如明珠般璀璨夺目，远远地就可以看到它散发出的柔和光线。这束光芒穿越黑暗的海洋，宛如一道生命的纽带，将孤寂的航行者与大地紧密相连。
+								</figcaption>
+							</figure>
+						</div>
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="grid_8">
+					<div id="tabs">
+						<ul>
+							<li><a href="#tabs-1">产品原型</a></li>
+						</ul>
+						<div class="clear"></div>
+						<div class="tab_cont" id="tabs-1">
+							<!-- 跳转的地址回头改一下 -->
+							<a href="./about.html">
+								<img src="images/slide3.png" style="width: 300px;height: 200px;">
+								<div class="extra_wrapper">
+									<div style="margin-bottom: 10px;">
+										<b style="font-size: 25px;">模型A</b>
+									</div>
+									<p>
+										这是一个用3D打印技术制作的山体模型。模型呈现出一座山峦的形状，虽然简单，但能够大致展示山脉的起伏和轮廓。虽然模型的细节有限，但它仍然能够给人一种山脉的感觉，让人联想到大自然中壮丽的山景。
+									</p>
+
+
+									<div class="clear "></div>
+
+								</div>
+							</a>
+							<div class="clear cl1"></div>
+							<!-- 跳转的地址回头改一下 -->
+							<a href="./about.html">
+								<img src="images/slide2.png" style="width: 300px;height: 200px;">
+								<div class="extra_wrapper">
+									<div style="margin-bottom: 10px;">
+										<b style="font-size: 25px;">模型B</b>
+									</div>
+									这是一个通过3D打印技术制作的山体模型。模型展现出了绵延起伏的山脉，山峰间峡谷纵横，形成壮丽的景观。清晰的岩石纹理和山势流畅的曲线表现出不同海拔高度的变化。触摸模型的表面，你能感受到仿佛能够触摸到山石的质感，仿佛置身于真实的山脉之中。
+									<div class="clear"></div>
+
+									<div class="clear "></div>
+
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid_4">
+					<!-- 跳转的地址回头改一下 -->
+					<a href="./about.html">
+						<div class="newsletter_title">更多</div>
+						<div class="n_container">
+							<img src="./images/left.png"
+								style="width: 400px;height: 450px;border: 1px solid #000;margin-top: 8px;">
+						</div>
+					</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<!--==============================footer=================================-->
+
+	</div>
+	<footer>
+		<div class="bottom_block">
+			<div class="container_12">
+				<div class="grid_2">
+					<h4>联系我:</h4>
+					TEL: 1-800-234-5678<br><a href="#">info@demolink.org</a>
+
+				</div>
+				<div class="grid_2">
+					<h4>地址:</h4>
+					北京<br><a href="#">北京</a>
+
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+
+	</footer>
+
+	<script type="text/javascript">
+		var counter = document.getElementById("counter");
+		var list = document.getElementById("list");
+		var pre = document.getElementById("pre");
+		var next = document.getElementById("next");
+		var timer;
+
+		//html与js结合式书写 : 变量名.style.left=数值
+		var nextlist = parseInt(list.style.left); //接收偏移量的值
+
+		//偏移量的改变
+		function animals(offset) {
+			var newlist = parseInt(list.style.left) + offset; //定义参数随时传递新的偏移量值
+			list.style.left = newlist + 'px'; //偏移量需要单位‘像素px’，否则计算机识别不出，图片将不会移动位置
+			//到达最后一张时，点击右耳朵则返回到第一张
+			if (newlist < -3001) {
+				list.style.left = 0 + 'px';
+				list.setAttribute('class', 'list');
+			}
+			//在第一张时，点左耳朵则返回到最后一张
+			if (newlist > 0) {
+				list.style.left = -3000 + 'px';
+				list.setAttribute('class', 'list');
+			}
+		}
+		// 点击左右耳朵触发函数
+		pre.onclick = function () {
+			animals(1150) //点击左边耳朵，图片往左移一张，偏移量加600
+		}
+		next.onclick = function () {
+			animals(-1150) //点击右边耳朵，图片往右移一张，偏移量减600
+		}
+		// 开始定时器
+		function start() {
+			timer = setInterval(function () {
+				next.onclick()
+			}, 2000);
+		}
+		start();
+		// 关闭定时器
+		function stop() {
+			clearInterval(timer);
+		}
+		// 鼠标移出时,开始定时器
+		counter.onmouseleave = start;
+		// 鼠标移入时,关闭定时器
+		counter.onmouseenter = stop;
+	</script>
+</body>
+
+</html>
